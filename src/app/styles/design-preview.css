@@ -1,0 +1,56 @@
+/* UI Design preview pane special styling  (adapted from uiverse.io) */
+.dp-grid {
+  height: 800px;
+  width: 800px;
+  background-image: linear-gradient(to right, #0f0f10 1px, transparent 1px),
+    linear-gradient(to bottom, #0f0f10 1px, transparent 1px);
+  background-size: 1rem 1rem;
+  background-position: center center;
+  position: absolute;
+  z-index: -1;
+  filter: blur(1px);
+}
+
+.dp-wrapper,
+.dp-white,
+.dp-border,
+.dp-darkBg,
+.dp-glow {
+  max-height: 70px;
+  max-width: 314px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  border-radius: 12px;
+  filter: blur(3px);
+}
+
+.dp-input {
+  background-color: #010201;
+  border: none;
+  width: 301px;
+  height: 56px;
+  border-radius: 10px;
+  color: white;
+  padding-inline: 59px;
+  font-size: 14px;
+}
+.dp-input::placeholder {
+  color: #c0b9c0;
+}
+.dp-input:focus { outline: none; }
+
+/* Additional decorative classes (shortened for brevity) */
+.dp-code-box {
+  background:#0b0b0b;
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:12px;
+  padding:1rem;
+  max-height:420px;
+  overflow:auto;
+  position:relative;
+}
+
+.dp-code-box pre { white-space:pre-wrap; font-size:12px; color:#c2fbd7; } 
